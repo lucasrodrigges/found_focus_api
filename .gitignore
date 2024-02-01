@@ -1,2 +1,3 @@
-/sfound_focus_apirc/**/__pycache__
+__pycache__/
 .env
+
