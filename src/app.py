@@ -8,4 +8,4 @@ app.include_router(users.router)
 
 @app.get("/")
 def read_root():
-    return {"message": "Olá Mundo!"}
+    return {"message": "Api is running!"}
