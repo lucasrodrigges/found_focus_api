@@ -1,14 +1,14 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
-from src.schemas.user_schemas import (
+from found_focus_api.schemas.user_schemas import (
     CreateUserSchema,
     UserPublic,
     UserListPublic,
 )
-from src.database.init import get_session
-from src.services.users.create_user import create_user
-from src.services.users.read_users import read_users
+from found_focus_api.database.init import get_session
+from found_focus_api.services.users.create_user import create_user
+from found_focus_api.services.users.read_users import read_users
 
 
 router = APIRouter(prefix="/users", tags=["users"])

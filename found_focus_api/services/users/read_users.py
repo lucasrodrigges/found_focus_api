@@ -2,8 +2,8 @@ from fastapi import Depends
 from sqlalchemy.orm import Session
 from sqlalchemy import select
 
-from src.database.init import get_session
-from src.models.main import User
+from found_focus_api.database.init import get_session
+from found_focus_api.models.main import User
 
 
 def read_users(session: Session = Depends(get_session)):

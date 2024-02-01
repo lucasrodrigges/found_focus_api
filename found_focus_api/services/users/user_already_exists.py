@@ -1,9 +1,9 @@
 from fastapi import Depends, HTTPException
 from sqlalchemy.orm import Session
 
-from src.schemas.user_schemas import CreateUserSchema
-from src.database.init import get_session
-from src.services.users.find_user_by_unique import find_user_by_unique
+from found_focus_api.schemas.user_schemas import CreateUserSchema
+from found_focus_api.database.init import get_session
+from found_focus_api.services.users.find_user_by_unique import find_user_by_unique
 
 
 def user_already_exists(

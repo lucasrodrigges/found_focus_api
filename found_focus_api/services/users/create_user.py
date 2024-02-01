@@ -1,10 +1,10 @@
 from fastapi import Depends
 from sqlalchemy.orm import Session
 
-from src.schemas.user_schemas import CreateUserSchema
-from src.database.init import get_session
-from src.services.users.user_already_exists import user_already_exists
-from src.models.main import User
+from found_focus_api.schemas.user_schemas import CreateUserSchema
+from found_focus_api.database.init import get_session
+from found_focus_api.services.users.user_already_exists import user_already_exists
+from found_focus_api.models.main import User
 
 
 def create_user(

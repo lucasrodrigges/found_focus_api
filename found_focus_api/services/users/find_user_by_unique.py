@@ -2,9 +2,9 @@ from fastapi import Depends
 from sqlalchemy.orm import Session
 from sqlalchemy import select
 
-from src.schemas.user_schemas import CreateUserSchema
-from src.database.init import get_session
-from src.models.main import User
+from found_focus_api.schemas.user_schemas import CreateUserSchema
+from found_focus_api.database.init import get_session
+from found_focus_api.models.main import User
 
 
 def find_user_by_unique(
