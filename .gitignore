@@ -1,3 +1,2 @@
-__pycache__/
+/found_focus_api/**/__pycache__
 .env
-
