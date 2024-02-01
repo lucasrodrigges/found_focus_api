@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 
-from src.database.settings import Settings
+from found_focus_api.database.settings import Settings
 
 engine = create_engine(Settings().DATABASE_URL)
 

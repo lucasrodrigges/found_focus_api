@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from src.routes import users
+from found_focus_api.routes import users
 
 app = FastAPI()
 
